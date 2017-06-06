@@ -1,0 +1,254 @@
+<html>
+<head>
+    <title>
+    Dashboard
+    
+    </title>
+    <link rel="stylesheet" href="rwd.css">
+    <script src="dynamic.js"></script>
+    </head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+   <div class="list">
+        <ul>
+        <li><a href="#" onclick="list1()"> Home</a></li>
+            <li><a href="#" onclick="list2()" > ITEM1</a></li>
+            <li><a href="#" onclick="list3()"> ITEM2</a></li>
+            <li><a href="#" onclick="list4()"> ITEM3</a></li>
+        
+        </ul></div>
+        <div class="list2">
+          <ul>
+        <li><a href="#" onclick="list1()"> Home</a></li>
+            <li><a href="#" onclick="list2()"> ITEM1</a></li>
+            <li><a href="#" onclick="list3()"> ITEM2</a></li>
+            <li><a href="#" onclick="list4()"> ITEM3</a></li>
+        
+        </ul></div>
+        
+        </div>
+      <div class="content" >
+          <div id="matter1">
+            
+Bridge (Welsh: Pont Trefynwy) in Monmouth, Wales, is the only remaining fortified river bridge in Great Britain with its gate tower standing on the bridge. It crosses the River Monnow 500 metres (1,600 ft) above its confluence with the River Wye. According to tradition, construction of Monnow Bridge began in 1272 to replace a Norman timber bridge. Through the medieval era, the English Civil War, and the Chartist uprising, the bridge played a significant role in defending Monmouth. It also served as a toll gate, a gaol, a munitions store, a lodge, an advertising hoarding, and a focus for celebrations. Built predominantly of Old Red Sandstone, the bridge was significantly reconstructed in the 18th and 19th centuries. It then also became a popular subject for artists such as Turner. In the 20th century, it suffered damage from accidents and heavy traffic. After a new road bridge was built downstream in 2004, use of the Monnow Bridge was restricted to pedestrians. Its historical and architectural importance are reflected in its status as a Scheduled Monument and a Grade I listed building. (Full article...)
+
+Recently featured: Japanese battleship Mutsu Harvey Kurtzman's Jungle Book Hands Across Hawthorne
+Archive By email More featured articles...
+Did you know...
+Alma L. Hayden
+Alma L. Hayden
+... that Krebiozen, an expensive cancer treatment scam, was unmasked in 1963 by chemist Alma Levant Hayden (pictured)?
+... that Missa aulica is a Missa brevis in C with trumpets and violins by František Xaver Brixi, who was director of the choir at St. Vitus Cathedral from age 27?
+... that the role of Lofty Chiltern in Casualty was specifically written for actor Lee Mead?
+... that according to the 2009 book Pinoy Capital, a significant number of Filipino Americans in Daly City, California, preferred to be identified as Filipinos?
+... that Ivy Josiah led opposition to domestic violence against women and children in Malaysia?
+... that America's current laws on cadaver acquisitions followed 19th-century riots over medical grave-robbing?
+... that it was initially claimed by newspapers that "King Kong" Kirk died after being splashed by Big Daddy Shirley Crabtree in a wrestling match?
+... that after a long official debate, Puddletown stopped being Piddletown?
+Recent additions Start a new article Nominate an article
+In the news
+Ruben Östlund in 2014
+Ruben Östlund
+The diplomatic quarter in Kabul is attacked in a truck bombing, killing at least 80 people and injuring more than 350 others.
+The Square, directed by Ruben Östlund (pictured), wins the Palme d'Or at the Cannes Film Festival.
+Masked gunmen attack a bus convoy of Coptic Christians in Egypt, and Egyptian warplanes strike alleged militant camps in Libya in response.
+Philippine President Rodrigo Duterte declares martial law in Mindanao amidst armed clashes with the Islamist Maute group in Marawi City.
+A suicide bombing after an Ariana Grande concert at the Manchester Arena in the United Kingdom kills 22 people and injures more than 100 others.
+Ongoing: Battle of Mosul
+Recent deaths: Manuel Noriega John Noakes Gregg Allman Jim Bunning
+On this day...
+June 1: Shavuot (Judaism, 2017)
+
+Kronan
+Kronan
+1676 – The Swedish warship Kronan (pictured), one of the largest ships in the world at the time, sank at the Battle of Öland with a loss of around 800 men.
+1831 – British naval officer and explorer James Clark Ross successfully led the first expedition to reach the North Magnetic Pol
+       
+          </div>
+          <div id="matter2">
+          
+          Web browsers are extremely capable graphics platforms with the ability to manipulate fonts, colors, shapes and even animations. The file format that controls these is cascading style sheets (CSS).
+
+Understanding CSS is a fundamental skill for the modern web developer, whether you're creating static pages from scratch, generating dynamic pages with a framework or designing a blog theme. This learning path will take you from the basics of CSS to a live coding session that explains the mixing of HTML, CSS and JavaScript.
+
+Related Topics
+
+Web DeveloperGraphic DeveloperFront-end DeveloperHTML 5JavaScriptWeb Design
+We recommend starting at: Intermediate Level
+Curious about your results? View details
+Expert
+201-300
+Proficient
+101-200
+Novice
+0-100
+Rating
+17868th
+percentile
+CoursesAbout
+Beginner
+PASSED
+Watched 0 hours of 8
+0%
+Complete 60% of this section to measure your improvement
+Measure Improvement
+These first CSS tutorials will provide you with the knowledge to start working with CSS and web design. You’ll learn CSS tricks, including layouts, the HTML box model, styling text and CSS selectors. You will also learn the art of typography and how to keep your web pages looking good across all types of devices.
+
+1
+Introduction to CSS
+By Scott Allen
+ 
+2
+CSS Positioning
+By Susan Simkins
+ 
+3
+Responsive Typography
+By Jason Pamental
+ 
+Description
+          
+          </div>
+          <div id="matter3">
+          
+1. Read instructions for each function carefully.
+2. Feel free to create new functions if needed. Give good names though :)
+3. Use builtins and datatypes that we have seen so far.
+4. If something about the function spec is not clear, use the corresponding test
+   for clarification.
+5. Many python builtin functions allow you to pass functions to customize their behavior. This makes it very productive
+   to get things done in python.
+'''
+
+# Given a list of age, height of various people [(name, years, cms), .... ]. Sort them in decreasing by age and increasing by height.
+# NOTE: define a function and pass it to the builtin sort function (key) to get this done, don't do your own sort.
+# Do the sort in-place (ie) don't create new lists.
+from operator import itemgetter
+def custom_sort(input):
+    if input != None:
+        input.sort(key=itemgetter(2), reverse=False)
+        input.sort(key=itemgetter(1), reverse=True)
+    else:
+        return None
+
+
+def single_custom_sort_test(input, expected):
+    custom_sort(input) # sorts in place
+    assert input == expected
+
+def test_custom_sort():
+    # boundary cases
+    single_custom_sort_test(None, None)
+    single_custom_sort_test([], [])
+
+    # no collisions
+    single_custom_sort_test(
+        [("Ram", 25, 160), ("Shyam", 30, 162), ("Sita", 15, 130)],
+        [("Shyam", 30, 162), ("Ram", 25, 160), ("Sita", 15, 130)])
+
+    # collisions in age
+    single_custom_sort_test(
+        [("Ram", 25, 165), ("Shyam", 30, 162), ("Ravi", 25, 160), ("Gita", 30, 140)],
+        [("Gita", 30, 140), ("Shyam", 30, 162), ("Ravi", 25, 160), ("Ram", 25, 165)])
+
+    # collisions in age and height, then initial order is maintained in stable sorts.
+    single_custom_sort_test(
+        [("Ram", 25, 165), ("Shyam", 30, 140), ("Ravi", 25, 165), ("Gita", 30, 140)],
+        [("Shyam", 30, 140), ("Gita", 30, 140), ("Ram", 25, 165), ("Ravi", 25, 165)])
+
+
+VOWELS = set("aeiou")
+
+# returns the word with the maximum number of vowels, in case of tie return
+# the word which occurs first. Use the builtin max function and pass a key func to get this done.
+def max_vowels(words):
+    if ([] != words != None):
+        vowelc = []
+        for x in range(0, len(words)):
+            vowelc.append(len(set(words[x]) & VOWELS))
+        return words[vowelc.index(max(vowelc))]
+    else:
+        return None
+
+def test_max_vowels():
+    assert None == max_vowels(None)
+    assert None == max_vowels([])
+
+    assert "hello" == max_vowels(["hello", "pot", "gut", "sit"])
+    assert "engine" == max_vowels(["engine", "hello", "pot", "gut", "sit"])
+
+    assert "automobile" == max_vowels(["engine", "hello", "pot", "gut", "sit", "automobile"])
+
+    assert "fly" == max_vowels(["fly", "pry", "ply"])
+
+          </div>
+          <div id="matter4">
+Write your own implementation of converting a number to a given base. It is important to have a good logical
+and code understanding of this.
+
+Till now, we were glossing over error checking, for this function do proper error checking and raise exceptions
+as appropriate.
+
+Reading material:
+    http://courses.cs.vt.edu/~cs1104/number_conversion/convexp.html
+'''
+import string
+
+def convert(number, base):
+    """
+    Convert the given number into a string in the given base. valid base is 2 <= base <= 36
+    raise exceptions similar to how int("XX", YY) does (play in the console to find what errors it raises).
+    Handle negative numbers just like bin and oct do.
+    """
+    if ((type(number) != type(1)) or (type(base) != type(1))):
+        raise TypeError
+
+            rtnstr = "-" + rtnstr
+        return rtnstr
+
+    else:
+        raise ValueError("ValueError")
+
+
+
+def test_convert():
+    assert "100" == convert(4,2)
+    assert "FF" == convert(255,16)
+    assert "377" == convert(255, 8)
+    assert "JJ" == convert(399, 20)
+    assert "-JJ" == convert(-399, 20)
+
+   
+
+    try:
+        convert("100", 10)
+        assert False, "Invalid number did not raise error"
+    except TypeError as te:
+        print te
+
+    try:
+        convert(None, 10)
+        assert False, "Invalid number did not raise error"
+    except TypeError as te:
+        print te
+
+
+    try:
+        convert(100, "10")
+        assert False, "Invalid base did not raise error"
+    except TypeError as te:
+        print te
+          
+          
+          </div>
+        </div>
+ 
+    
+
+    
+    
+    </body>
+
+
+</html>
