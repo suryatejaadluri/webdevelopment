@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Multistep Registration Form</title>
+<link href="rwd.css" rel="stylesheet" type="text/css">
+<script src="scripty.js" ></script>
+</head>
+<body>
+<div class="content">
+<div class="main">
+<form  id="form" class="regform" method="get">
+<ul id="progressbar">
+<li id="active1">Create Account</li>
+<li id="active2">Social Profiles</li>
+<li id="active3">Personal Details</li>
+</ul>
+<fieldset id="first">
+<h2 class="title">Create your account</h2>
+<p class="subtitle">Step 1</p>
+<input  id="username" name="usernm" placeholder="username" type="text" value="" class="text_field"
+onkeyup="user()">
+<p id="er1">Enter your name</p>
+<input  name="email" placeholder="Email" type="text" id="Email" value="" class="text_field" onkeyup="Emailv()" onblur="Emailv()">
+<p id="er2">Incorrect Email</p>
+<input  name="pass" placeholder="Password" id="password" type="password" value="" class="text_field" onkeyup="passv()">
+<p id="er3"></p>
+<input id="next_btn1"  onclick="validate()" type="button" value="Next">
+</fieldset>
+<fieldset id="second">
+<h2 class="title">Social Profiles</h2>
+<p class="subtitle">Step 2</p>
+<input type="text" class="text_field" id="twi" name="twitter" placeholder="Twitter"  value="">
+<input type="text" class="text_field" name="fb" id="fb" placeholder="Facebook"  value="">
+<input type="text" class="text_field" name="g+" id="g+" placeholder="Google plus" value="">
+<input id="pre_btn1" onclick="prev_step1()" type="button" value="Previous">
+<input id="next_btn2" name="next" onclick="next_step2()" type="button" value="Next">
+</fieldset>
+<fieldset id="third">
+<h2 class="title">Personal Details</h2>
+<p class="subtitle">Step 3</p>
+<input class="text_field" name="fname" id="fnm" placeholder="First Name" type="text" onkeyup="fnmv()">
+<p id="er4">Please enter your First name</p>     
+<input class="text_field" name="lname" id="lnm" placeholder="Last Name" type="text" onkeyup="lnmv()">
+<p id="er5">Please enter your Last name</p>     
+<input class="text_field" name="cont" id="cont" placeholder="Contact" type="text" onkeyup="contv()">
+<p id="er6">Please enter your Contact Number</p>     
+<label id="gend">Gender</label>
+<input name="gender" type="radio" value="Male" checked>Male
+<input name="gender" type="radio" value="Female">Female
+<textarea name="address" placeholder="Address" id="addr" onkeyup="addrv()">
+</textarea>
+<p id="er7">Please enter your Address</p>     
+<input id="pre_btn2" onclick="prev_step2()" type="button" value="Previous">
+<input  onclick="validate2()" type="button" value="Submit" >
+</fieldset>
+</form>
+</div>
+</div>
+</body>
+</html>
