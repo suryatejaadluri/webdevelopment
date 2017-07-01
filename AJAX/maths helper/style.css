@@ -1,0 +1,14 @@
+
+body{
+margin:0;
+padding: 0;
+background-image: url(background.jpg);
+}
+#container
+{
+   margin: 1% auto;
+width: 50%;
+font-size: 200%;
+text-align: center;
+height: 100%; 
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+<div id="container">
+    
+<h2>Maths helper</h2>
+<form>
+<input type="text" id="exp" placeholder="enter your expression here">
+<select name="function" id="func">
+    <option value="simplify">simplify</option>
+    <option value="factor">factor</option>
+    <option value="derive">derive</option>
+    <option value="integrate">integrate</option>
+    <option value="cos">cos</option>
+    <option value="sin">sin</option>
+    <option value="tan">tan</option>
+    <option value="log">log</option>
+  </select>
+  <br><br>
+  <input type="button" value="submit" onclick="loadDoc()">
+    </form>
+    <br><br>
+    Result:<span id="demo"></span>
+    </div>
+<script>
+function loadDoc() {
+    var x = document.getElementById("func").selectedIndex;
+    var y=document.getElementsByTagName("option")[x].value;
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     
+     var z=JSON.parse(this.responseText);
+   document.getElementById("demo").innerHTML=z.result;
+   
+   
+    }
+  };
+  xhttp.open("GET","https://newton.now.sh/"+y+"/"+document.getElementById("exp").value, true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
